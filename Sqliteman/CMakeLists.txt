@@ -187,6 +187,8 @@ MESSAGE(STATUS Qt4 libs: ${QT_LIBRARY_DIR})
 
 INCLUDE( ${QT_USE_FILE} )
 
+FIND_PACKAGE( Threads REQUIRED )
+
 
 IF (WANT_INTERNAL_QSCINTILLA)
     MESSAGE(STATUS "QSci: Building with internal copy of QScintilla.")
